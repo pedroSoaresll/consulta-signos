@@ -41,7 +41,7 @@ class Signos {
 		let diaPessoa = dataFormatada[1]
 		let mesPessoa = dataFormatada[0]
 
-		this._signo.forEach((infoSigno, index) => {
+		this._signos.forEach((infoSigno, index) => {
 
 			// pergunta se o mes da pessoa é o mes que esta passando no loop
 			if (mesPessoa == infoSigno.mes) {
@@ -55,7 +55,7 @@ class Signos {
 				} else {
 
 					// vai para o próximo mês
-					let proximoMes = this.signo[index + 1]
+					let proximoMes = this._signos[index + 1]
 
 					// valida se a pessoa ainda é deste mes
 					if (proximoMes == mesPessoa) {
